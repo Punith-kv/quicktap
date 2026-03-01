@@ -60,16 +60,28 @@ All payment behavior is simulated in-app.
 
 ## Running the app
 
-```bash
-cd quicktap
-flutter pub get
-flutter run
-```
+### Android (requested platform)
 
-**Windows (if Flutter is not in PATH):** Edit `run.ps1` to set your Flutter `bin` path, then run `.\run.ps1` from the `quicktap` folder. See `RUN_QUICKTAP.md` for details.
+- Install **Flutter SDK** and **Android Studio** (with Android SDK and an emulator or a physical device with USB debugging enabled).
+- Clone this repo and open a terminal in the `quicktap` folder.
+- Run:
 
-**First time:** If platform folders (android, ios, web) are missing, run once:
+  ```bash
+  flutter pub get
+  flutter run -d android
+  ```
 
-```bash
-flutter create . --project-name quicktap
-```
+  If you only have one Android device/emulator connected, you can also just run:
+
+  ```bash
+  flutter run
+  ```
+
+### Notes
+
+- **Windows (if Flutter is not in PATH):** Edit `run.ps1` to set your Flutter `bin` path, then run `.\run.ps1` from the `quicktap` folder. See `RUN_QUICKTAP.md` for details.
+- **First time:** If platform folders (android, ios, web) are missing, run once:
+
+  ```bash
+  flutter create . --project-name quicktap
+  ```
