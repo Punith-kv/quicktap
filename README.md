@@ -109,6 +109,13 @@ All payment behavior is simulated in-app.
   flutter run
   ```
 
+### Clickable web demo (mobile view)
+
+- **On a phone:** Open `https://punith-kv.github.io/quicktap/` in the browser. The app is responsive and will render in a mobile-friendly layout automatically.
+- **On a laptop/desktop (to preview mobile):**
+  - Open `https://punith-kv.github.io/quicktap/` in Chrome or Edge.
+  - Press `F12` to open DevTools, then click the device icon (phone/tablet) to **toggle device emulation** and pick a phone (e.g. Pixel) to view the app in a mobile-sized frame.
+
 ### Notes
 
 - **Windows (if Flutter is not in PATH):** Edit `run.ps1` to set your Flutter `bin` path, then run `.\run.ps1` from the `quicktap` folder. See `RUN_QUICKTAP.md` for details.
